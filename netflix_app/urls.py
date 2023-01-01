@@ -1,6 +1,9 @@
 from django.urls import path
-from .views import home_view
+from .views import home
+
+
+app_name = 'netflix_app'
 
 urlpatterns = [
-    path('', home_view)
+    path('', home.as_view(), name='home')
 ]

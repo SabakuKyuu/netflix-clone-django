@@ -127,6 +127,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_URL = 'login'
 
+LOGIN_REDIRECT_URL = 'netflix_app:home'
+
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 
 ACCOUNT_EMAIL_REQUIRED = True

@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
+from django.views import View
 
-def home_view(request):
-    return render(request, 'index.html')
+class home(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'index.html')
